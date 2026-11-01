@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Wish I Was a Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>I Wish I Was a Cloud</h2>
+
+        <nav>
+            <button onclick="mostrar('home')">Sobre mim</button>
+            <button onclick="mostrar('curiosidades')">Curiosidades</button>
+            <button onclick="mostrar('jogo')">Cloud Clicker</button>
+        </nav>
+    </header>
+
+    <section id="home" class="pagina">
+        <div class="nuvem nuvem1"></div>
+        <div class="nuvem nuvem2"></div>
+        <div class="nuvem nuvem3"></div>
+
+        <div class="caixa">
+            <h1>Sobre mim</h1>
+
+            <p>
+                Eu queria ser uma nuvem para viver tranquilamente.
+                Apenas voar, viajar pelo mundo enquanto descanso
+                e flutuo pelo céu.
+
+                Acho que a vida seria muito boa se eu pudesse
+                conhecer tantos lugares sem preocupações,
+                simplesmente sendo uma nuvem.
+            </p>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="pagina" style="display:none">
+
+        <div class="caixa">
+            <h1>Curiosidades sobre nuvens</h1>
+
+            <h3>O que são nuvens?</h3>
+            <p>
+                Nuvens são formadas por pequenas gotinhas de água
+                ou cristais de gelo que ficam suspensos no céu.
+            </p>
+
+            <h3>Como as nuvens se formam?</h3>
+            <p>
+                Elas se formam quando o vapor de água esfria
+                e se transforma em gotinhas de água.
+            </p>
+
+            <h3>O que as nuvens fazem?</h3>
+            <p>
+                Elas ajudam no ciclo da água e podem produzir chuva.
+            </p>
+
+            <h3>O ciclo de vida das nuvens</h3>
+            <p>
+                As nuvens aparecem, crescem, mudam de forma
+                e podem desaparecer ou produzir chuva.
+            </p>
+
+            <h3>Tipos de nuvens</h3>
+            <p>
+                Existem nuvens como Cumulus, Cirrus e Stratus.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="jogo" class="pagina">
+
+        <h1>Cloud Clicker</h1>
+
+        <p>Clique na nuvem para ganhar pontos!</p>
+
+        <div class="nuvem-jogo" onclick="clicarNuvem()"></div>
+
+        <h2 id="pontuacao">Pontuação: 0</h2>
+
+        <button onclick="reiniciar()">Reiniciar</button>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
